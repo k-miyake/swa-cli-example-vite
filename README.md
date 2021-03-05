@@ -1,1 +1,1 @@
-# swa-cli-example-vite
+# SWA CLI example - Vite
