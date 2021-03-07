@@ -12,7 +12,7 @@
     "types": ["vite/client"],
     "plugins": [
       {
-        "name": "typescript-plugin-vue"
+        "name": "@vuedx/typescript-plugin-vue"
       }
     ]
   },
