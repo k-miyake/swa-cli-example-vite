@@ -6,10 +6,6 @@
       "statusCode": 200
     },
     {
-      "route": "/admin/*",
-      "allowedRoles": ["admin"]
-    },
-    {
       "route": "/login",
       "rewrite": "/.auth/login/github"
     },
