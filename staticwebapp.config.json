@@ -11,6 +11,10 @@
       "rewrite": "/.auth/login/github"
     },
     {
+      "route": "/.auth/login/twitter",
+      "statusCode": 404
+    },
+    {
       "route": "/logout",
       "redirect": "/.auth/logout"
     }
@@ -18,7 +22,8 @@
   "navigationFallback": {
     "rewrite": "/index.html",
     "exclude": [
-      "/images/*.{png,jpg,gif}",
+      "/js/*.{js,map}",
+      "/img/*.{png,jpg,gif}",
       "/css/*"
     ]
   }
