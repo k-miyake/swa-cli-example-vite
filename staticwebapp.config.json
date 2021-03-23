@@ -26,8 +26,9 @@
   "navigationFallback": {
     "rewrite": "/index.html",
     "exclude": [
-      "/img/*.{png,jpg,gif}",
-      "/css/*"
+      "/assets/*.{js,map}",
+      "/assets/*.{png,jpg,gif}",
+      "/assets/*"
     ]
   }
 }
