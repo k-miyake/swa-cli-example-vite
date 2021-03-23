@@ -8,7 +8,7 @@
     },
     {
       "route": "/login",
-      "rewrite": "/.auth/login/github"
+      "redirect": "/.auth/login/github"
     },
     {
       "route": "/.auth/login/twitter",
@@ -17,6 +17,10 @@
     {
       "route": "/logout",
       "redirect": "/.auth/logout"
+    },
+    {
+      "route": "/?*",
+      "statusCode": 404
     }
   ],
   "navigationFallback": {
