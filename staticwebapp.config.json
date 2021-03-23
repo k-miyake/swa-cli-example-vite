@@ -19,7 +19,7 @@
       "redirect": "/.auth/logout"
     },
     {
-      "route": "/?*",
+      "route": "/a*",
       "statusCode": 404
     }
   ],

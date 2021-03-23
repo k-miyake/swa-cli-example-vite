@@ -2,6 +2,7 @@ import { createApp } from "vue";
 import App from "./App.vue";
 import Home from "./pages/Home.vue";
 import Admin from "./pages/Admin.vue";
+import Time from "./pages/Time.vue";
 import { createRouter, createWebHistory } from "vue-router";
 
 const router = createRouter({
@@ -16,6 +17,11 @@ const router = createRouter({
       path: "/admin",
       name: "admin",
       component: Admin,
+    },
+    {
+      path: "/time",
+      name: "time",
+      component: Time,
     },
   ],
 });
