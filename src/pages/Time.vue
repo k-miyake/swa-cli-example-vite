@@ -11,7 +11,7 @@ export default defineComponent({
   setup() {
     let utcTime = ref('未取得')
     onMounted(async () => {
-      const resp = await axios.get('http://localhost:4280/api/swa-api')
+      const resp = await axios.get('/api/swa-api')
       utcTime.value = resp.data
       console.log(utcTime)
     })
