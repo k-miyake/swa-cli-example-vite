@@ -24,8 +24,8 @@ jobs:
           node-version: ${{ env.NODE_VERSION }}
       - run: npm ci
       - run: npm run build
-      - name: copy config
-        run: cp staticwebapp.config.json ./dist
+      - name: move swa config
+        run: mv staticwebapp.config.json ./dist
 
       - uses: actions/upload-artifact@v2
         with:
@@ -51,7 +51,6 @@ jobs:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_ASHY_PEBBLE_0B78DD600 }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: 'upload'
-          app_location: '/'
           output_location: 'dist'
           skip_app_build: true
 
