@@ -30,9 +30,7 @@ jobs:
       - uses: actions/upload-artifact@v2
         with:
           name: vuedist
-          path: |
-            dist/
-            staticwebapp.config.json
+          path: dist/
 
   deploy_job:
     if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed' && github.actor != 'dependabot[bot]')
