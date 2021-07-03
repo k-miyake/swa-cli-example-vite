@@ -21,8 +21,8 @@ jobs:
       - name: Use Node.js ${{ env.NODE_VERSION }}
       - uses: actions/setup-node@v2
         with:
-          node-version: node-version: ${{ env.NODE_VERSION }}
-        cache: npm
+          node-version: ${{ env.NODE_VERSION }}
+          cache: npm
       - run: npm ci
       - run: npm run build
       - name: move swa config
